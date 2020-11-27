@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 //start database
-mongoose.connect('mongodb+srv://kunalp78:kunalp78@theeguardians.csigd.mongodb.net/test?authSource=admin&replicaSet=atlas-wepxbu-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true',{ 
+mongoose.connect('mongodb+srv://kunalp78:kunalp78@theeguardians.csigd.mongodb.net/amityform?authSource=admin&replicaSet=atlas-wepxbu-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true',{ 
     useNewUrlParser: true, 
     useUnifiedTopology: true, 
     useCreateIndex: true, 
