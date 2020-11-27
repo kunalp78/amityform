@@ -10,14 +10,14 @@ const bodyParser = require('body-parser');
 mongoose.connect(process.env.DATABASE,{ 
     useNewUrlParser: true, 
     useUnifiedTopology: true, 
-    useCreateIndex: true, 
-    useFindAndModify: false 
 }).then(()=>console.log("database connected"));
 //use form router
+app.use(bodyParser.urlencoded({extended:false}))
+app.use(bodyParser.json())
 app.use(cors());
 app.use(formRouter);
 //use middleware
-app.use(bodyParser.urlencoded({extended:true}))
+
 //listen to port
 app.listen(port,()=>{
     console.log(`Port working on ${port}`)
