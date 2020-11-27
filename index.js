@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 //start database
-mongoose.connect('mongodb+srv://kunalp78:kunalp78@theeguardians.csigd.mongodb.net/amityform',{ 
+mongoose.connect(process.env.DATABASE,{ 
     useNewUrlParser: true, 
     useUnifiedTopology: true, 
     useCreateIndex: true, 
