@@ -4,6 +4,7 @@ const formRouter = require('./formRouter/userForm')
 const port = process.env.PORT || 3000;
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config()
 const bodyParser = require('body-parser');
 //start database
 mongoose.connect(process.env.DATABASE,{ 
