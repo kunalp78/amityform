@@ -19,7 +19,7 @@ const formCourseModel = new mongoose.Schema({
         type: String,
     },
     sem: {
-        type: Number,
+        type: String,
     },
     evs: {
         type: String,
