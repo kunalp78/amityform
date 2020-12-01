@@ -14,7 +14,7 @@ const userFormSchema = new mongoose.Schema({
     },
     uri:{
         type:String
-    }
+    },
 },{
     timestamps:true
 });
