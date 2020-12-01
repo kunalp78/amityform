@@ -13,7 +13,7 @@ mongoose.connect(process.env.DATABASE,{
     useUnifiedTopology: true, 
 }).then(()=>console.log("database connected"));
 //use form router
-app.use(bodyParser.urlencoded({extended:false}));
+//app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 app.use(cors());
 app.use(courseForm);
