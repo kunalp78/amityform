@@ -1,9 +1,4 @@
 const express = require('express');
-const userForm = require('../models/userForm');
-const multer = require('multer');
-const methodOverride = require('method-override');
-const GridFsStorage = require('multer-gridfs-storage');
-const mongoose = require('mongoose');
 const formCourse = require('../models/courseForm');
 const router = new express.Router();
 
@@ -42,11 +37,11 @@ const router = new express.Router();
 //    }).catch(console.log)
 
 // })
-router.post("/form/api",async (req,res)=>{
-    const form = new userForm(req.body);
+router.post("/course/form/api", async (req, res) =>{
+    const form = new formCourse(req.body);
     try{
         await form.save();
-        res.status(201).send(form);    
+        res.status(201).send(form); 
     }catch(e){
         res.status(500).send(e);
     }
